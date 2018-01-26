@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:css='false' b:responsive='true' b:version='2' lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<!-- Nova.xml V1.0.2 | GitHub -->
+<!-- Nova.xml V1.1.1 | GitHub -->
   <head>
 
 <!-- SEO and more -->
@@ -79,35 +79,27 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 /* END normalize.css */
-
 /*! nova.css v0.0.1  */
 .clearfloat::after{display:block;content:"";clear:both}
-
-
 /*]]>*/</style>
 
 <style type='text/css'>
 /*<![CDATA[*/
 body{/*start styles*/}
-
 /*
 =>MediaQuerys
 */
 /* Extra small devices */
 @media (max-width: 575px) {
-
 }
-
 /* Small devices */
 @media (min-width: 576px) {
   
 }
-
 /* Medium devices */
 @media (min-width: 768px) {
   
 }
-
 /* Large devices */
 @media (min-width: 992px) {
 .left {float: left;}
@@ -117,61 +109,49 @@ body{/*start styles*/}
 }
    
 }
-
 /* Extra large devices */
 @media (min-width: 1200px) {
-
 }
 /*]]>*/</style>
 
 <b:if cond='data:view.isSingleItem'>
 <style type='text/css'>
 /*<![CDATA[*/
-
 /*]]>*/</style>
 </b:if>
 <b:if cond='data:view.isPost'>
 <style type='text/css'>
 /*<![CDATA[*/
-
 /*]]>*/</style>
-<b:elseif cond="data:view.isPage" />
+<b:elseif cond='data:view.isPage'/>
 <style type='text/css'>
 /*<![CDATA[*/
-
 /*]]>*/</style>
 </b:if>
 
     <b:skin><![CDATA[
-
 .singleton-element:not(.cookie-choices-info),
 .item-control.blog-admin,
 .widget-item-control{display: none}
 .CSS_LIGHTBOX{z-index: 90001 !important}
 a[imageanchor],a[imageanchor] > img{margin:0!important;height:auto!important}
 #comment-editor{border: 0;width: 100%;min-height: 220px} 
-
 body#layout .container {margin: 0 auto;}
 body#layout .left {float: left;}
 body#layout .right {float: right;}
-
 /* Variable definitions
    ====================
-
 <Variable name="keycolor" description="Main Color" type="color" default="#2196f3" value="#2196f3"/>
-
 <Group description="Principal" selector="body">
 <Variable name="body.font" description="Fuente del texto" type="font" family="RobotoDraft" default="RobotoDraft" value="RobotoDraft"/>
 <Variable name="body.background.color" description="color background" type="color" default="#ffffff"  value="#fffcfc"/>
 <Variable name="body.text.color" description="Color de texto" type="color" default="#000000" value="#000000"/>
 <Variable name="link.color" description="Color de los enlaces" type="color" default="#000000" value="#000000"/>
 </Group>
-
    <Group description="Layout (Refrescar)" selector=".container_father">
       <Variable name="layout.invert" description="Invertir blog y sidebar (Cuerpo)" type="length" min="0" max="1px" default="0px" value="0px"/>
       <Variable name="layout.full" description="Mostrar Sidebar" type="length" min="0" max="1px" default="1px" value="1px"/>
    </Group>
-
    <Variable name="body.background" description="Main Background" type="background" color="$(body.background.color)" default="$(color) none repeat scroll top center" value="$(color) none repeat scroll top center"/>
 */
      
@@ -185,59 +165,78 @@ color: $(body.text.color);
 a, a:hover, a:visited{
 color: $(link.color);
 }
-
            
     ]]></b:skin>
 
 &lt;!--</head>--&gt;&lt;/head&gt;
 
   <body>
-<b:if cond='!data:view.isError'>
-<div calss='container_father clearfloat'><!-- contenedor padre -->
 
+<div calss='container_father clearfloat'><!-- contenedor padre -->
+<header class='header'>
+    <div class='header_content'>
+<div class='logo'>
+  <span><a href='#'>Boyeurshd</a></span>
+      </div>
+<div class='search'>
+
+      </div>
+
+  </div>
+</header>
+
+<b:if cond='!data:view.isError'>
 <div expr:class='&quot;blog &quot; + (data:skin.vars.layout_full != &quot;0px&quot; ? (data:skin.vars.layout_invert != &quot;0px&quot; ? &quot;right&quot; : &quot;left&quot;) :  &quot;blog--full&quot;)'>
      <b:section id='Blog'>
        <b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='1'>
          <b:widget-settings>
            <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-           <b:widget-setting name='style.textcolor'>#2196f3</b:widget-setting>
+           <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
            <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+           <b:widget-setting name='authorLabel'>By</b:widget-setting>
            <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-           <b:widget-setting name='style.urlcolor'>#fffcfc</b:widget-setting>
+           <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
            <b:widget-setting name='showAuthor'>true</b:widget-setting>
-           <b:widget-setting name='style.linkcolor'>#fffcfc</b:widget-setting>
+           <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-           <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
+           <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
            <b:widget-setting name='showLabels'>true</b:widget-setting>
-           <b:widget-setting name='showLocation'>true</b:widget-setting>
+           <b:widget-setting name='showLocation'>false</b:widget-setting>
            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
            <b:widget-setting name='postsPerAd'>1</b:widget-setting>
            <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-           <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
+           <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
            <b:widget-setting name='showInlineAds'>false</b:widget-setting>
            <b:widget-setting name='showReactions'>false</b:widget-setting>
          </b:widget-settings>
          <b:includable id='main' var='top'>
-            <b:if cond='data:numPosts != 0'>
                 <b:if cond='data:view.isMultipleItems'>
+      <b:if cond='data:view.search.query'>
+         <h2 class='message_search' style='font-size:1rem;padding: .8rem 1rem;background:rgba(0,0,0,0.04);margin-bottom:1rem;'><b:eval expr='data:view.search.query ? &quot;Resultados de: &quot; + data:view.search.query : &quot;hola&quot;'/></h2>
+      </b:if>
+            <b:if cond='data:numPosts == 0'>
+                      <b:include data='top' name='status-message'/><!-- message post false -->
+                    <b:else/>
+                 <b:include name='message-recent'/><!-- menssage recent -->
                   <!-- index and home-->
+				  <div class='loading flex wrap align-items-start'>
                   <b:loop values='data:posts' var='post'>
                     <b:if cond='data:post.dateHeader'>
                       <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
                     </b:if><!-- data time -->
-					<div class='loading'>
                     <b:include data='post' name='post'/><!-- insert post-->
-                    </div>
                     <b:if cond='data:post.includeAd'>
                       <div class='inline-ad'>
                         <data:adCode/>
                       </div>
                     </b:if><!-- Ad -->
             </b:loop>
+                  </div>
                   <!-- paginator -->
                <b:include name='nextprev'/>
+           </b:if>
                 <b:else/>
                   <!-- enter post and page static-->
                   <article class='article'>
@@ -252,9 +251,6 @@ color: $(link.color);
                     </b:loop>
                   </article>
                 </b:if>
-                    <b:else/>
-                      <b:include data='top' name='status-message'/><!-- message post false -->
-           </b:if>
 </b:includable>
          <b:includable id='backlinkDeleteIcon' var='backlink'>
   <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
@@ -501,6 +497,18 @@ color: $(link.color);
     </b:if>
   </b:if>
 </b:includable>
+         <b:includable id='message-recent'>
+     		<h3 class='title'><span>
+		<b:if cond='data:view.isHomepage'>
+          <i class='icon-cube'/> Recientes
+          <b:elseif cond='data:view.isSearch and not data:view.isLabelSearch'/>
+		  <i class='icon-bookmark'/> Archivo
+          <b:elseif cond='data:view.isLabelSearch'/>
+		  <i expr:class='&quot;title icon-tags &quot; + data:blog.searchLabel'/> <data:view.search.label/>
+		</b:if>
+</span>
+</h3>
+</b:includable>
          <b:includable id='mobile-index-post' var='post'><!-- none --></b:includable>
          <b:includable id='mobile-main' var='top'><!-- none --></b:includable>
          <b:includable id='mobile-nextprev'><!-- none --></b:includable>
@@ -521,55 +529,55 @@ color: $(link.color);
          <b:includable id='post' var='post'>
 		  <b:if cond='data:view.isMultipleItems'>
 
+		<div class='load'>
+  		<div class='load_content'>
+		<b:include name='post-image'/><!-- 1re imagen de la entrada -->
+			<div class='load_data'>
 		<b:include name='post-title'/><!-- titulo de la entrada -->
-		<b:include name='post-tags'/><!-- labels de la entrada -->
+		<b:include name='post-time'/><!-- fecha de la entrada -->
+            </div>
+        </div>
+        </div>
 
           <b:elseif cond='data:view.isPost'/>
-
-		<b:include name='post-title'/><!-- titulo de la entrada -->
-		<b:include name='post-header'/><!-- titulo de la entrada -->
-		<b:include name='post-body'/><!-- Contenido de la entrada -->
+		<header class='article_header'>
 		<b:include name='post-tags'/><!-- labels de la entrada -->
+		<div class='article_really'>
+		<b:include name='post-title'/><!-- titulo de la entrada -->
+		<b:include name='post-meta'/><!-- meta description-->
+        </div>
+		<div class='article_box flex justify-content-between align-items-center wrap'>
+		<b:include name='post-time'/><!-- fecha de la entrada -->
+		<b:include name='post-author'/><!-- autor de la entrada -->
+        </div>
+        </header>
+		<b:include cond='data:post.sharePostUrl' name='shareButtons'/>
+		<b:include name='post-body'/><!-- contenido de la entrada -->
 		<b:include name='post-reactions'/><!-- reacciones de la entrada -->
+		<b:include name='post-related'/><!-- post related -->
 
           <b:elseif cond='data:view.isPage'/>
 
           </b:if>
  </b:includable>
+         <b:includable id='post-author'>
+        <b:if cond='data:top.showAuthor'>
+		 <b:tag expr:class='(data:post.isMultipleItems ? &quot;load&quot; : &quot;article&quot;) + &quot;_author icon-user&quot;' name='span'>
+			<data:post.author/>
+         </b:tag>
+        </b:if>
+			<!-- autor -->
+</b:includable>
          <b:includable id='post-body'>
 		<div class='post-body clearfix' expr:data-postidd='data:post.id'>
 			<data:post.body/>
 		</div>
 	</b:includable>
-         <b:includable id='post-header'>
-			<!-- autor -->
-           <span class='post-author vcard'>
-        <b:if cond='data:top.showAuthor'>
-          <data:top.authorLabel/>
-            <b:if cond='data:post.authorProfileUrl'>
-              <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-                <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
-                <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
-                  <span itemprop='name'><data:post.author/></span>
-                </a>
-              </span>
-            <b:else/>
-              <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-                <span itemprop='name'><data:post.author/></span>
-              </span>
-            </b:if>
-        </b:if>
-      </span>
-			<!-- fecha de publicación -->
-      <span class='post-timestamp'>
-        <b:if cond='data:top.showTimestamp'>
-          <data:top.timestampLabel/>
-          <b:if cond='data:post.url'>
-            <meta expr:content='data:post.url.canonical' itemprop='url'/>
-            <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
-          </b:if>
-        </b:if>
-      </span>
+         <b:includable id='post-image'>
+     		<b:tag class='load_image' expr:href='data:post.url' name='a'>
+				<b:tag expr:src='data:post.firstImageUrl ? (data:isSearch ? resizeImage(data:post.firstImageUrl,80,&quot;1:1&quot;) : (data:skin.vars.layout_cards_image != &quot;0px&quot; ? resizeImage(data:post.firstImageUrl,400,&quot;16:9&quot;) : resizeImage(data:post.firstImageUrl,400))) : (data:isSearch ? resizeImage(data:imgDefault,80,&quot;1:1&quot;) : resizeImage(data:imgDefault,400,&quot;16:9&quot;))' name='img'>
+          		</b:tag>
+          </b:tag>
 </b:includable>
          <b:includable id='post-reactions'>
 			<!-- reaction -->
@@ -584,6 +592,113 @@ color: $(link.color);
         </b:if>
       </span>
 </b:includable>
+         <b:includable data='post' id='post-related'>
+      <b:if cond='data:post.labels and !data:blog.isPrivateBlog'>
+		<div class='article_really'>
+      	<h1 class='article_title'>Relacionados</h1>
+        </div>
+		<div class='post-related flex wrap align-items-start'/>
+	<script>//<![CDATA[
+	/*!	wjs-related v1.0.0 | José Gregorio fb.com/JGMateran (zkreations team) | Licensed under MIT | github.com/zkreations/wjs-related/blob/master/LICENSE*/
+		'use strict';
+	    var defaults = {
+			'container':document.querySelector('.post-related'),
+			'results':6,
+			'size':'w300-h200-c',
+			'snippetLength':100,//]]>
+			&#39;image&#39;:&#39;<b:eval expr='resizeImage(data:imgDefault,300,&quot;12:8&quot;)'/>&#39;,
+			&#39;postId&#39;:&#39;<data:post.id/>&#39;,
+			&#39;homepageUrl&#39;:&#39;<data:blog.homepageUrl/>&#39;,
+			&#39;labels&#39;:[<b:loop values='data:post.labels' var='label'>&#39;<data:label.name/>&#39;,</b:loop>]
+	    };//<![CDATA[
+		var methods = {
+			'labels':function(value){
+				var item, i = 0,
+					length = value.length;
+				var string = 'q=';
+				for (; i < length; i++){
+					string += 'label:"' + value[i] + (i + 1 !== length ? '"%7C' : '"');
+				}
+				return string;
+			}
+		};
+		function forEach(items,callback){
+			var i = 0,
+				length = items.length;
+			for (; i < length; i++){
+				if (callback.call(items[i],i,items[i])){
+					break;
+				}
+			}
+		}
+		function createScript(url,data){
+			var name, value, method,
+				script = document.createElement('script'),
+				src = url + '?alt=json-in-script';
+			for (name in data){
+				value = data[name];
+				method = methods[name];
+				src += '&' + (method ? method(value) : name + '=' + value);
+			}
+			script.src = src;
+			document.body.appendChild(script).parentNode.removeChild(script);
+			return src;
+		}
+		function render(data){
+			return [
+				'<div class="wjs-rel">'+
+					'<a href="' + data.url + '" class="wjs-rel__image">'+
+						'<img src="' + data.image + '" alt="' + data.title + '" />'+
+					'</a>'+
+					'<div class="wjs-rel__meta">'+
+						'<h3 class="wjs-rel__title">' + data.title + '</h3>'+
+					'</div>'+
+				'</div>'
+			].join('');
+		}
+		function related(json){
+			forEach(json.feed.entry,function(index,entry){
+				var postId = entry.id.$t.split('.post-')[1],
+					description = entry.content.$t.replace(/<[^>]*>?/g,''),
+					image = entry.media$thumbnail;
+				if (postId !== defaults.postId){
+					defaults.container.innerHTML += render({
+						id:postId,
+						snippet:( description.substring(0,defaults.snippetLength) + '...' ),
+						title:entry.title.$t,
+						image:( image ? image.url : defaults.image ).replace('s72-c',defaults.size),
+						published:new Date(entry.published.$t).toLocaleDateString("es-ES",{
+							year:'numeric',
+							month:'long',
+							day: 'numeric'
+						}),
+						description:description,
+						category:entry.category,
+						url:(function(){
+							var i = 0, link,
+								links = entry.link,
+								length = links.length;
+							for (; i < length; i++){
+								link = links[i];
+								if (link.rel === 'alternate'){
+									return link.href;
+								}
+							}
+						})()
+					});
+				}
+			});
+		}
+		createScript(defaults.homepageUrl + 'feeds/posts/default',{
+			'max-results':defaults.results + 1,
+			'callback':'related',
+			'labels':defaults.labels
+		});
+	//]]></script>
+      <b:else/>
+	    <p class='message'><strong>Posts relacionados:</strong> No está disponible si <strong><b:eval expr='!data:post.labels ? &quot;la entrada carece de etiquetas&quot; : &quot;el blog es privado&quot;'/></strong></p>
+      </b:if>
+    </b:includable>
          <b:includable id='post-tags'>
             <b:if cond='data:top.showPostLabels and data:post.labels'>
               <b:tag expr:class='(data:view.isMultipleItems ? &quot;load&quot; : &quot;article&quot;) + &quot;_label&quot;' name='div'>
@@ -594,6 +709,14 @@ color: $(link.color);
             </b:if>
 
 </b:includable>
+         <b:includable id='post-time'>
+			<!-- fecha de publicación -->
+        <b:if cond='data:top.showTimestamp'>
+<b:tag expr:class='(data:view.isMultipleItems ? &quot;load&quot; : &quot;article&quot;) + &quot;_time icon-clock-1&quot;' expr:name='data:view.isMultipleItems ? &quot;p&quot; : &quot;span&quot;'>
+      <data:post.timestamp/>
+</b:tag>
+          </b:if>
+</b:includable>
          <b:includable id='post-title'>
           <b:if cond='data:post.title.length != 0'>
             <b:tag expr:class='(data:view.isMultipleItems ? &quot;load&quot; : &quot;article&quot;) + &quot;_title font&quot;' expr:name='data:view.isMultipleItems ? &quot;h2&quot; : &quot;h1&quot;'>
@@ -601,6 +724,13 @@ color: $(link.color);
             </b:tag>
       </b:if>
 	</b:includable>
+         <b:includable id='post-meta'>
+<b:if cond='data:blog.metaDescription'>
+  <p class='article_meta'>&quot;<data:blog.metaDescription/>&quot;</p>
+  <b:else/>
+</b:if>
+
+</b:includable>
          <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
     <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
@@ -611,11 +741,23 @@ color: $(link.color);
   </b:if>
 </b:includable>
          <b:includable id='shareButtons' var='post'>
-  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if><b:if cond='data:top.showPlusOne'><div class='goog-inline-block google-plus-share-container'><data:post.googlePlusShareTag/></div></b:if>
+			<div class='share'>
+              <a class='flex align-items-center icon-facebook' expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url'> <p>Compartir</p></a>
+              <a class='flex align-items-center icon-twitter' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url'> <p>Twitter</p></a>
+              <a class='flex align-items-center icon-google' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url'> <p>Google +</p></a>
+              <a class='flex align-items-center icon-tumblr' expr:href='&quot;https://www.tumblr.com/share/photo?url=&quot; + data:post.firstImageUrl + &quot;&amp;caption=&quot; + data:post.url'> <p>Tumblr</p></a>
+              <a class='flex align-items-center icon-pinterest' expr:href='&quot;https://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;media=&quot; + data:post.firstImageUrl'> <p>Pinterest +</p></a>
+          </div>
+<script type='text/javascript'>
+//<![CDATA[
+  //!Autor: José Gregorio Materán | modificado: Daniel Abel
+var h=document.querySelector(".share").children;i=0;for(t=h.length;i<t;i++)h[i].onclick=function(a){a.preventDefault();window.open(this.href,"btn-"+i,"width=800,height=400,left="+(screen.width/2-400)+",top="+(screen.height/2-200))};
+//]]>
+</script>
 </b:includable>
          <b:includable id='status-message'>
             <b:if cond='data:navMessage'>
-                 <div class='message'>no hay ninguna entrada publicada todavia</div>
+           <div class='status_message' style='padding:1rem;text-align:center;background:rgba(0,0,0,0.04);color:rgba(0,0,0,0.6);'><b:eval expr='data:view.search.query ? data:messages.noResultsFound : data:messages.theresNothingHere'/></div>
             </b:if>
 </b:includable>
          <b:includable id='threaded-comment-form' var='post'>
@@ -652,7 +794,6 @@ color: $(link.color);
       if (items && items.length > 0) {
         cursor = parseInt(items[items.length - 1].timestamp) + 1;
       }
-
       var bodyFromEntry = function(entry) {
         var text = (entry &&
                     ((entry.content && entry.content.$t) ||
@@ -667,7 +808,6 @@ color: $(link.color);
         }
         return text;
       }
-
       var parse = function(data) {
         cursor = null;
         var comments = [];
@@ -715,7 +855,6 @@ color: $(link.color);
         }
         return comments;
       };
-
       var paginator = function(callback) {
         if (hasMore()) {
           var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
@@ -753,11 +892,9 @@ color: $(link.color);
         }
         return '';
       };
-
       var replybox = null;
       var replyUrlParts = null;
       var replyParent = undefined;
-
       var onReply = function(commentId, domId) {
         if (replybox == null) {
           // lazily cache replybox, and adjust to suit this style:
@@ -777,7 +914,6 @@ color: $(link.color);
           replyParent = commentId;
         }
       };
-
       var hash = (window.location.hash || '#').substring(1);
       var startThread, targetComment;
       if (/^comment-form_/.test(hash)) {
@@ -785,7 +921,6 @@ color: $(link.color);
       } else if (/^c[0-9]+$/.test(hash)) {
         targetComment = hash.substring(1);
       }
-
       // Configure commenting API:
       var configJso = {
         'maxDepth': config.maxThreadDepth
@@ -803,14 +938,12 @@ color: $(link.color);
         'config': configJso,
         'messages': msgs
       };
-
       var render = function() {
         if (window.goog && window.goog.comments) {
           var holder = document.getElementById('comment-holder');
           window.goog.comments.render(holder, provider);
         }
       };
-
       // render now, or queue to render when library loads:
       if (window.goog && window.goog.comments) {
         render();
@@ -920,10 +1053,16 @@ color: $(link.color);
   </aside>
   </b:if>
 
-</div><!-- end contenedor padre -->
 <b:else/>
-esto parece ser un error, porfavor vuelve al inicio
+<div class='error flex justify-content-center column wrap'>
+  <h6 class='error_logo'>4<img border='0' src='https://3.bp.blogspot.com/-pm56wGNXL0w/WmPxT7uulOI/AAAAAAAAAKk/SFjSzHDG42cWnDa5hSOvj4ar-cEmjLjCQCLcBGAs/s1600/sad.png' width='140'/>4</h6>
+  <p class='error_not-found'>Page not found</p>
+	<p class='error_description'>Uff.... al parecer no se encontro lo que buscabas.</p>
+</div>
 </b:if>
+
+
+</div><!-- end contenedor padre -->
 
 &lt;!--</body>--&gt;&lt;/body&gt;
 </html>
