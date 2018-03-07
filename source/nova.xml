@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:css='false' b:responsive='true' b:version='2' lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<!-- Nova.xml V1.1.5 | GitHub -->
+<!-- Nova.xml V1.1.5 > Layout V2 | GitHub -->
   <head>
 
 <!-- SEO and more -->
@@ -183,7 +183,7 @@ color: $(link.color);
 
   <body>
 
-<div calss='container_father clearfloat'><!-- contenedor padre -->
+<div class='container_father clearfloat'><!-- contenedor padre -->
 <header class='header'>
     <div class='header_content'>
 <div class='logo'>
