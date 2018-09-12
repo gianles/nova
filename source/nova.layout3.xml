@@ -1,19 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-  <head><link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'/>
+<html b:css='false' b:defaultwidgetversion='2' b:js='false' b:layoutsVersion='3' b:responsive='true' lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+  <!-- Nova V2.0.2 | For Gian Franco Imperiale http://www.bygian.com-->
+  <head>
+
+<meta expr:content='data:blog.title' name='Title'/>
+<meta content='Sintomas de enfermedades, Enciclopedia para los dolores del cuerpo, sintomas y causas, Sintomas, Causas, Enfermedades' name='keywords'/>
+<meta content='Sintomas de Enfermedades' name='Subject'/>
+<meta expr:content='data:view.description' property='og:description'/>
+<meta expr:content='data:view.description' name='twitter:description'/>
+<meta expr:content='data:view.description' name='description'/>
+<meta content='ImperioMedia' name='author'/>
+<meta content='es' name='language'/>
+<meta content='3 days' name='Revisit-After'/>
+
+<meta expr:charset='data:blog.encoding'/>
+<meta content='blogger' name='generator'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<meta expr:content='data:blog.adultContent ? "mature" : "general"' name='rating'/>
+<meta expr:content='data:view.isMultipleItems ? "website" : "article"' property='og:type'/>
+
+<!-- Responsive viewport -->
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+
+<!-- Meta Robots Relativo -->
+<b:with value='data:view.isHomepage or data:view.isSingleItem ? "index,follow" : "noindex,nofollow"' var='robots'>
+   <meta expr:content='data:robots' name='robots'/>
+   <b:if cond='data:robots == "index,follow"'>
+      <meta content='noodp,noydir' name='robots'/>
+   </b:if>
+</b:with>
+
+<!-- Optimizando Posts -->
+<b:if cond='data:view.isPost and data:view.featuredImage'>
+   <link expr:href='data:view.featuredImage' rel='image_src'/>
+   <meta expr:content='data:view.featuredImage' name='twitter:image'/>
+   <meta expr:content='data:view.featuredImage' property='og:image'/>
+</b:if>
+
+ <title>
+<b:if cond="data:view.isHomepage">
+   <data:blog.title/>
+  <b:elseif cond="data:view.isSearch"/>
+  Entradas de <data:blog.pageName/>
+  <b:elseif cond="data:view.isError"/>
+	Error #404
+  <b:elseif cond="data:view.isArchive"/>
+	Archivo del blog
+</b:if>
+</title>
+
+<!-- feeds -->
+<b:tag cond='data:blog.feedLinks' expr:href='data:blog.homepageUrl.canonical path "feeds/posts/default" ' expr:title='data:blog.title + " - Atom"' name='link' rel='alternate' type='application/atom+xml'/>
+<b:tag cond='data:blog.feedLinks' expr:href='data:blog.homepageUrl.canonical path "feeds/posts/default" params {alt: "rss"}' expr:title='data:blog.title + " - RSS"' name='link' rel='alternate' type='application/rss+xml'/>
+
 <!-- schema ld+json -->
 <script type='application/ld+json'>
 {&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:blog.title/>&quot;,&quot;url&quot;:&quot;<data:blog.homepageUrl.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;<data:blog.homepageUrl.canonical/>search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}
 </script>
 
-<!--[if lt IE 9]>
-   <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<![endif]-->
-    <!-- DÉBUT DE L'ENTÊTE -->
 
-    <!-- EMPLACEMENT 1 : BALISES META, LINKS, FICHIERS JS, ETC -->
-   <link href='https://fonts.googleapis.com/css?family=Rammetto+One' rel='stylesheet'/>
 <style type='text/css'>
 /*<![CDATA[*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -31,7 +78,6 @@ button,hr,input{overflow:visible}img,legend{max-width:100%}audio,canvas,img,prog
   font-weight: normal;
   font-style: normal;
 }
-
 [data-icon]:before {
   font-family: "iconos-para-definiciones" !important;
   content: attr(data-icon);
@@ -44,7 +90,6 @@ button,hr,input{overflow:visible}img,legend{max-width:100%}audio,canvas,img,prog
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 [class^="gian-"]:before,
 [class*=" gian-"]:before {
   font-family: "iconos-para-definiciones" !important;
@@ -57,7 +102,6 @@ button,hr,input{overflow:visible}img,legend{max-width:100%}audio,canvas,img,prog
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .gian-paint-brush:before, .gian-Artes:before{
   content: "\61";
 }
@@ -384,14 +428,12 @@ button,hr,input{overflow:visible}img,legend{max-width:100%}audio,canvas,img,prog
 .clearfloat::after{display:block;content:"";clear:both}.button{display:inline-block;white-space:nowrap;font-weight:400;line-height:1.25;user-select:none;font-size:100%;padding:.6em 1em;text-decoration:none!important;color:rgba(0,0,0,.5);cursor:pointer;vertical-align:middle}embed,iframe,object{margin:0;padding:0;border:0;outline:0}.embed{padding-bottom:56.25%;height:0}.embed embed,.embed iframe,.embed object,.embed video{width:100%;height:100%;position:absolute;top:0;bottom:0;left:0}.table{display:block;width:100%;overflow-x:auto}.container{margin-right:auto;margin-left:auto;padding-left:1rem;padding-right:1rem}img,legend{max-width:100%}audio,canvas,img,progress,video{display:inline-block}img{border-style:none;vertical-align:middle}ol,ol li,ul,ul li{margin:0;list-style:none;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:500;margin:0}h2{font-size:1.5rem}h3{font-size:1.4rem}h4{font-size:1.3rem}h5{font-size:1.2rem}h6{font-size:1.1rem}p{margin:0}.reset{background:none;padding:0;margin:0;border:0;outline:0;box-shadow:0 0 transparent;font:inherit}.no-style{background:none;padding:0;margin:0;border:0;outline:0;box-shadow:0 0 transparent;font:inherit}.center{display:block;margin-left:auto;margin-right:auto}.message{background:rgba(0,0,0,0.04);color:rgba(0,0,0,0.7);margin:1rem 0;text-align:center;padding:1rem;}
 /* Startin */
 html {font-size: 13px;}
-
 /*Contenedores padres*/
 .container{
 max-width:1100px;
 padding:0;
 }
 .container_padding{padding:1.5rem 1rem;}
-
 .header { 
 box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 color:#fff;
@@ -410,16 +452,13 @@ body{/*start styles*/}
 /* Small devices */
 @media (min-width: 536px) {
 .load{width:50%;}
-.service{width:50%;}
 }
 @media (min-width: 810px) {
-.service{width:33.33%;}
 .load{width:33.33%;}
 }
 /* Medium devices */
 @media (min-width: 992px) {
 .load{width:25%;}
-.service{width:25%;}
 }
 @media (min-width: 1310px) {
 .container{
@@ -431,10 +470,8 @@ html {font-size: 14px;}
 @media (min-width: 992px) {
 .left {float: left;}
 .right {float: right;}
-.blog {width: calc(100% - 0rem);}
-.aside_two{
-width:23.5%;
-}
+.blog {width: calc(70% - 2rem);}
+.aside{width:30%;}
 }
 /* Extra large devices */
 @media (min-width: 1200px) {
@@ -453,14 +490,10 @@ width:23.5%;
 <b:elseif cond='data:view.isPage'/>
 <style type='text/css'>
 /*<![CDATA[*/
-
 /*]]>*/</style>
 </b:if>
 
-  <!-- Lato Font -->
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
     <b:skin><![CDATA[
-
 .singleton-element:not(.cookie-choices-info),
 .item-control.blog-admin,
 .widget-item-control{display: none}
@@ -496,166 +529,14 @@ color: $(body.text.color);
 a, a:hover, a:visited{
 }
     ]]></b:skin>
-<b:if cond='data:view.isPost'><style>
-.header_wallpaper-cover{
-    /*background-image: url(<data:view.featuredImage/>); Imagen*/
-}</style></b:if>
-    <b:defaultmarkups>
-<b:defaultmarkup type='Blog, FeaturedPost, PopularPosts'>
 
-  <b:includable id='main'>
-        <b:includable id='postLabels'>
-          <b:comment>We don&#39;t display labels on the home page.</b:comment>
-           <b:loop values='data:posts' var='gian'>
-            <data:gian.labels/>
-          </b:loop>
-        </b:includable>
-    <!-- Nouveau code par défaut de l'inclusion "main" dans les gadgets "Blog", "FeaturedPost" et "PopularPosts" -->
-
-  </b:includable>
-
-</b:defaultmarkup>
-      <b:defaultmarkup type='PopularPosts'>
-        <b:includable id='main' var='this'>
-          <b:comment>Default the title to &#39;Popular posts from this blog&#39;.</b:comment>
-          <b:with value='data:messages.popularPostsFromThisBlog' var='defaultTitle'>
-            <b:include name='super.main'/><b:include name='snippetedPostContent'/>
-          </b:with>
-        </b:includable>
-        <b:includable id='snippetedPostContent'>
-          <b:comment>Add a &#39;keep reading&#39; link to the item-content.</b:comment>
-          <b:include name='snippetedPostTitle'/>
-          <b:include name='snippetedPostByline'/>
-          <div class='item-content float-container'>
-            <b:include cond='data:this.postDisplay.showFeaturedImage and data:post.featuredImage' name='snippetedPostThumbnail'/>
-            <b:if cond='data:this.postDisplay.showSnippet'>
-              <b:with value='&quot;popular-posts&quot;' var='snippetPrefix'>
-                <b:include cond='data:post' data='post' name='postSnippet'/>
-              </b:with>
-            </b:if>
-            <b:include data='post' name='postFooterJumpLink'/>
-          </div>
-        </b:includable>
-      </b:defaultmarkup>
-    </b:defaultmarkups>
-<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: &quot;ca-pub-4555071359931443&quot;,
-    enable_page_level_ads: true
-  });
-</script>
-  </head>
+  &lt;!--</head>--&gt;&lt;/head&gt;
   <body>
 
-<header class='header header_wallpaper header_wallpaper-cover'>
-<div class='head_header'>
-<div class='container flex'>
-<div class='flex align-items-center' style='margin-right:auto;'>
-<button class='toggle_button js-effet reset' data-mict='aside_open'><span class='toggle_button_icon'/></button>
-<div class='logo flex align-items-center'>
-  <a class='logo_title' expr:href='data:blog.homepageUrl'><b>By</b><i style='font-weight:400;display:inline-block;'>gian</i></a><div class='holis' id='aside_open'/>
-  </div>  </div>
-
-<div class='header_bar' style='margin-left:auto;'>
-  <nav class='nav_page clearfloat'>
-    <a class='active mayuscula' href='#'>Inicio</a>
-    <a class=' mayuscula' href='#'>Formulario</a>
-    <a class=' mayuscula' href='#'>Servicios</a>
-    <a class=' mayuscula' href='#'>Enlazanos</a>
-  </nav>
-  </div>
-  </div>
-  </div>
-  <div class='plo column flex align-items-center justify-content-center'><i class='gian-rocket' style='display:block;font-size:5rem;'/>
-  </div>
-    </header>
-
 <div class='container container_padding clearfloat'>
-<b:if cond='data:view.isPost'>
-<aside class='aside left'>
-  <b:section id='aside'>
-    <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
-      <b:widget-settings>
-        <b:widget-setting name='content'>&lt;div class=&quot;sociality flex&quot;&gt;
-&lt;div class=&quot;red&quot;&gt;
-&lt;a href=&quot;#&quot; class=&quot;red_content red_fb&quot;&gt;
-&lt;center&gt;
-&lt;p class=&quot;gian-facebook&quot;&gt;&lt;/p&gt;
-&lt;/center&gt;
-&lt;/a&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;red&quot;&gt;
-&lt;a href=&quot;#&quot; class=&quot;red_content red_twit&quot;&gt;
-&lt;center&gt;
-&lt;p class=&quot;gian-twitter&quot;&gt;&lt;/p&gt;
-&lt;/center&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;red&quot;&gt;
-&lt;a href=&quot;#&quot; class=&quot;red_content red_google&quot;&gt;
-&lt;center&gt;
-&lt;p class=&quot;gian-google&quot;&gt;&lt;/p&gt;
-&lt;/center&gt;
-&lt;/a&gt;
-&lt;/div&gt;&lt;/div&gt;</b:widget-setting>
-      </b:widget-settings>
-      <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-    </b:widget>
-    <b:widget id='Followers1' locked='false' title='Seguidores' type='Followers' visible='true'>
-      <b:widget-settings>
-        <b:widget-setting name='borderColorTransparent'>true</b:widget-setting>
-        <b:widget-setting name='useTemplateDefaultStyles'>true</b:widget-setting>
-        <b:widget-setting name='contentSecondaryTextColor'>#000000</b:widget-setting>
-        <b:widget-setting name='contentHeadlineColor'>#000000</b:widget-setting>
-        <b:widget-setting name='endcapTextColor'>#000000</b:widget-setting>
-        <b:widget-setting name='contentTextColor'>#000000</b:widget-setting>
-        <b:widget-setting name='contentSecondaryLinkColor'>#000000</b:widget-setting>
-        <b:widget-setting name='endcapLinkColor'>#000000</b:widget-setting>
-        <b:widget-setting name='contentLinkColor'>#000000</b:widget-setting>
-      </b:widget-settings>
-      <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot; and data:codeSnippet != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
-      <b:if cond='data:codeSnippet != &quot;&quot;'>
-        <div style='margin-right:2px;'>
-          <data:codeSnippet/>
-        </div>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-    </b:widget>
-    <b:widget id='HTML2' locked='false' title='dqwdqw' type='HTML' visible='true'>
-      <b:widget-settings>
-        <b:widget-setting name='content'>sdqwdfwq</b:widget-setting>
-      </b:widget-settings>
-      <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-    </b:widget>
-  </b:section>
-</aside>
-  </b:if>
-
-  <b:section class='sección flex' id='sección'/>
-<div expr:class='&quot;blog &quot; +  (data:view.isSingleItem ? &quot;right&quot; : &quot;right&quot;)'>
+<div expr:class='&quot;blog &quot; +  (data:view.isSingleItem ? &quot;right&quot; : &quot;left&quot;)'>
     <b:section class='main' id='main' showaddelement='yes'>
-
       <b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='showDateHeader'>false</b:widget-setting>
@@ -1136,7 +1017,7 @@ sdadad
   </section>
 </b:includable>
       </b:widget>
-      <b:widget id='PopularPosts1' cond="data:view.isHomepage" locked='false' title='Lo mas leido' type='PopularPosts' version='2' visible='true'>
+      <b:widget cond='data:view.isHomepage' id='PopularPosts1' locked='false' title='Lo mas leido' type='PopularPosts' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
           <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -1181,140 +1062,6 @@ sdadad
       </b:widget>
     </b:section>
   </div>
-  <b:section class='sección2 flex clearfloat' cond='data:view.isMultipleItems' id='seccion_nuevo'>
-    <b:widget id='FollowByEmail1' locked='false' title='Recibe de primero todas las novedades' type='FollowByEmail' version='2' visible='true'>
-      <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <b:include name='content'/>
-</b:includable>
-      <b:includable id='content'>
-<b:class name='suscribe'/>
-  <div class='widget-content' style='padding:.65rem .7rem .7rem;'>
-      <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-    <div class='flex align-items-center row-medium column'>
-        <input autocomplete='off' class='feedburner__input reset' expr:placeholder='data:messages.emailAddress' name='email' type='email'/>
-        <input class='follow_submit feedburner__sumit reset' type='submit' value='Suscribirse!'/>
-        <input expr:value='data:feedPath' name='uri' type='hidden'/>
-        <input name='loc' type='hidden' value='en_US'/>
-    </div>
-      </form>
-  </div>
-</b:includable>
-    </b:widget>
-    <b:widget id='Profile1' locked='false' title='Sobre mi' type='Profile' version='2' visible='true'>
-      <b:widget-settings>
-        <b:widget-setting name='showaboutme'>true</b:widget-setting>
-        <b:widget-setting name='showlocation'>true</b:widget-setting>
-      </b:widget-settings>
-      <b:includable id='main' var='this'>
-  <b:include name='widget-title'/>
-  <b:include name='content'/>
-</b:includable>
-      <b:includable id='authorProfileImage'>
-  <img class='profile-img' expr:alt='data:messages.myPhoto' expr:src='resizeImage(data:authorPhoto.image, 300, &quot;1:1&quot;)'/>
-</b:includable>
-      <b:includable id='content'>
-  <b:if cond='data:team'>
-    <div class='widget-content team'>
-      <b:include name='teamProfile'/>
-    </div>
-  <b:else/>
-    <div class='widget-content individual'>
-      <b:include name='userProfile'/>
-    </div>
-  </b:if>
-</b:includable>
-      <b:includable id='defaultProfileImage'>
-  <div class='default-avatar'/>
-</b:includable>
-      <b:includable id='profileImage'>
-  <b:if cond='data:authorPhoto.image'>
-    <b:include name='authorProfileImage'/>
-  <b:else/>
-    <b:include name='defaultProfileImage'/>
-  </b:if>
-</b:includable>
-      <b:includable id='teamProfile'>
-  <ul>
-    <b:loop values='data:authors' var='author'>
-      <li>
-        <div class='team-member'>
-          <b:include data='author' name='teamProfileLink'/>
-        </div>
-      </li>
-    </b:loop>
-  </ul>
-</b:includable>
-      <b:includable id='teamProfileLink'>
-  <a class='profile-link g-profile' expr:href='data:userUrl'>
-    <b:include name='profileImage'/>
-    <span class='profile-name'><data:display-name/></span>
-  </a>
-</b:includable>
-      <b:includable id='userGoogleProfile'>
-  <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
-</b:includable>
-      <b:includable id='userLocation'>
-  <dd class='profile-data location'><data:location/></dd>
-</b:includable>
-      <b:includable id='userProfile'>
-<div class='load_bio flex align-items-start'>
-
-  <b:include name='userProfileImage'/>
-<span class='flex align-items-center'>
-
-  <b:include name='userProfileInfo'/>
-</span>
-</div>
-</b:includable>
-      <b:includable id='userProfileData'>
-  <dt class='profile-data'>
-    <b:include name='userProfileLink'/>
-    <b:include cond='data:hasgoogleprofile' name='userGoogleProfile'/>
-  </dt>
-</b:includable>
-      <b:includable id='userProfileImage'>
-  <a expr:href='data:userUrl'>
-    <b:include name='profileImage'/>
-  </a>
-</b:includable>
-      <b:includable id='userProfileInfo'>
-  <div class='profile-info'>
-    <div class='profile-datablock'>
-      <b:class cond='data:showlocation and data:location != &quot;&quot;' name='has-location'/>
-
-      <b:include name='userProfileData'/>
-      <b:include cond='data:showlocation and data:location != &quot;&quot;' name='userLocation'/>
-      <b:include cond='data:aboutme != &quot;&quot;' name='userProfileText'/>
-    </div>
-    <b:include name='viewProfileLink'/>
-  </div>
-</b:includable>
-      <b:includable id='userProfileLink'>
-  <a class='profile-link g-profile' expr:href='data:userUrl' rel='author'>
-    <data:displayname/>
-  </a>
-</b:includable>
-      <b:includable id='userProfileText'>
-  <span class='profile-textblock' style='font-size:1.5rem;'>
-    <data:aboutme/>
-  </span>
-</b:includable>
-      <b:includable id='viewProfileLink'>
-<div class='profile-sociales'>
-  <a class='profile-link link-bg' expr:href='data:userUrl' rel='author'>
-    <i class='gian-blogger'/> Perfil
-  </a>
-  <a class='profile-link link-fb' expr:href='data:userUrl' rel='author'>
-    <i class='gian-facebook'/>
-  </a>
-  <a class='profile-link link-twi' expr:href='data:userUrl' rel='author'>
-    <i class='gian-twitter'/>
-  </a>
-          </div>
-</b:includable>
-    </b:widget>
-  </b:section>
 
   </div>
   </body>
